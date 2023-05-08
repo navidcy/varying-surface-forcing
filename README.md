@@ -2,29 +2,31 @@
 
 Jupyter notebooks to reproduce figures for the paper:
 
-Bhagtani, D., Hogg, A. McC., Holmes, R. M., and Constantinou, N. C. (2023) Surface heating steers planetary-scale ocean circulation., J. Phys. Oceanogr., (submitted on January 2023; arXiv:2301.11474, doi:[10.48550/arXiv.2301.11474](https://doi.org/10.48550/arXiv.2301.11474)).
+&nbsp; &nbsp; &nbsp; &nbsp; Bhagtani, D., Hogg, A. McC., Holmes, R. M., and Constantinou, N. C. (2023) Surface heating steers planetary-scale ocean circulation., _J. Phys. Oceanogr._, (submitted on January 2023; arXiv:2301.11474, doi:[10.48550/arXiv.2301.11474](https://doi.org/10.48550/arXiv.2301.11474)).
+
 
 ## Contents
 
-`Figures`: Figures produced by jupyter notebooks in home directory.
+- `Figures`: Figures produced by jupyter notebooks in home directory.
 
-`NETCDF`: Data files containing:
-  (i) `Gyre_95th`: gyre strength estimated using isopycnal outcropping method, and
-  (ii) `SST_expts`: pre-calculated globally integrated sea surface temperatures used for Fig. 1.
+- `NETCDF`: Data files containing:
+  * `Gyre_95th`: gyre strength estimated using isopycnal outcropping method, and
+  * `SST_expts`: pre-calculated globally integrated sea surface temperatures used for Fig. 1.
 
-`Expt_config_figures.ipynb`: Notebook to create Fig. 1.
+- `Expt_config_figures.ipynb`: Notebook to create Fig. 1.
 
-`Wind_figures.ipynb`: Notebook to create Figs. 2 and 3.
+- `Wind_figures.ipynb`: Notebook to create Figs. 2 and 3.
 
-`Red_heat_figures.ipynb`: Notebook to create Figs. 4, 5, 6, and 7.
+- `Red_heat_figures.ipynb`: Notebook to create Figs. 4, 5, 6, and 7.
 
-`Inc_heat_figures.ipynb`: Notebook to create Figs. 8, 9, 10, 11, and 12.
+- `Inc_heat_figures.ipynb`: Notebook to create Figs. 8, 9, 10, 11, and 12.
 
-`Uniform_warming_figures.ipynb`: Notebook to create Fig. 13.
+- `Uniform_warming_figures.ipynb`: Notebook to create Fig. 13.
+
 
 ## Numerical model information 
 
-We run ACCESS-OM2 (Kiss et al 2020) at 0.25 degree resolution which comprises of:
+We run ACCESS-OM2 (Kiss et al. 2020) at 0.25 degree resolution which comprises of:
 
 (i) MOM v5.1: https://github.com/dhruvbhagtani/MOM5/tree/f3f05e7700ca29ed1baa5f1c8d1f411ae9a40ae3 with LIBACCESS-OM2 modules used: https://github.com/COSIMA/libaccessom2/tree/392dce398e985843cc6488af4c3498138373838b.
 
@@ -54,5 +56,7 @@ Outputs for each experiment can be found on the National Computational Infrastru
 
 The MOM5 version used for the perturbation experiments is: https://github.com/dhruvbhagtani/MOM5/tree/d7d72278a11ed9e2d88be3cb8d780b8efba629c5.
 
-References:
-1. Kiss, A. E., Hogg, A. McC., Hannah, N., Boeira Dias, F., Brassington, G. B., Chamberlain, M. A., Chapman, C., Dobrohotoff, P., Domingues, C. M., Duran, E. R., England, M. H., Fiedler, R., Griffies, S. M., Heerdegen, A., Heil, P., Holmes, R. M., Klocker, A., Marsland, S. J., Morrison, A. K., Munroe, J., Nikurashin, M., Oke, P. R., Pilo, G. S., Richet, O., Savita, A., Spence, P., Stewart, K. D., Ward, M. L., Wu, F., and Zhang, X.: ACCESS-OM2 v1.0: a global ocean–sea ice model at three resolutions, Geosci. Model Dev., 13, 401–442, https://doi.org/10.5194/gmd-13-401-2020, 2020.
+
+## References
+
+1. Kiss, A. E., Hogg, A. McC., Hannah, N., Boeira Dias, F., Brassington, G. B., Chamberlain, M. A., Chapman, C., Dobrohotoff, P., Domingues, C. M., Duran, E. R., England, M. H., Fiedler, R., Griffies, S. M., Heerdegen, A., Heil, P., Holmes, R. M., Klocker, A., Marsland, S. J., Morrison, A. K., Munroe, J., Nikurashin, M., Oke, P. R., Pilo, G. S., Richet, O., Savita, A., Spence, P., Stewart, K. D., Ward, M. L., Wu, F., and Zhang, X. (2020) ACCESS-OM2 v1.0: a global ocean–sea ice model at three resolutions, _Geosci. Model Dev._, **13**, 401–442, doi:[10.5194/gmd-13-401-2020](https://doi.org/10.5194/gmd-13-401-2020).
