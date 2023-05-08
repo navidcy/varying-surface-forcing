@@ -40,9 +40,9 @@ This eddy-permitting model is run for 200 years (more details present in Section
 
 | Expt short name    | Expt long name | Wind Factor | Surface buoyancy flux contrast (W m⁻²) | Region | 
 | ------------------ | ----------- | ----------- | -------------------------------------- | ------ |
-| Control            | 025deg_jra55_ryf_control  | 1 | 0 | G |
-| 0.5xW            | 025deg_jra55_ryf_fluxS_050x_20yr_avg  | 0.5 | 0 | G |
-| 1.5xW            | 025deg_jra55_ryf_fluxS_150x_20yr_avg  | 1.5 | 0 | G |
+| Control            | `025deg_jra55_ryf_control` | 1 | 0 | G |
+| 0.5xW            | `025deg_jra55_ryf_fluxS_050x_20yr_avg` | 0.5 | 0 | G |
+| 1.5xW            | `025deg_jra55_ryf_fluxS_150x_20yr_avg` | 1.5 | 0 | G |
 | -15 W m⁻²            | `025deg_jra55_ryf_fluxH_neg10W` | 1 | -15 | G - T |
 | -7.5 W m⁻²            | `025deg_jra55_ryf_fluxH_neg5W` | 1 | -7.5 | G - T |
 | +7.5 W m⁻²            | `025deg_jra55_ryf_fluxH_pos5W` | 1 | +7.5 | G - T |
