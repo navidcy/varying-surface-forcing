@@ -32,7 +32,7 @@ We run ACCESS-OM2 (Kiss et al 2020) at 0.25 degree resolution which comprises of
 
 This eddy-permitting model is run for 200 years (more details present in Section 2 of the paper), after which the following set of MOM5-only perturbation experiments are branched off using:
 
-| Expt short name    | Expt long name | Wind Factor | Surface buoyancy flux contrast (W m-2) | Region | 
+| Expt short name    | Expt long name | Wind Factor | Surface buoyancy flux contrast (W m⁻²) | Region | 
 | ------------------ | ----------- | ----------- | -------------------------------------- | ------ |
 | Control            | 025deg_jra55_ryf_control  | 1 | 0 | G |
 | 0.5xW            | 025deg_jra55_ryf_fluxS_050x_20yr_avg  | 0.5 | 0 | G |
