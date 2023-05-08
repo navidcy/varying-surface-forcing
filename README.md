@@ -8,7 +8,9 @@ Bhagtani, D., Hogg, A. McC., Holmes, R. M., and Constantinou, N. C. (2023) Surfa
 
 `Figures`: Figures produced by jupyter notebooks in home directory.
 
-`NETCDF`: Data files containing: (i) (Gyre_95th) gyre strength estimated using isopycnal outcropping method, and (ii) (SST_expts) pre-calculated globally integrated sea surface temperatures to create Fig. 1 in the paper.
+`NETCDF`: Data files containing:
+  (i) `Gyre_95th`: gyre strength estimated using isopycnal outcropping method, and
+  (ii) `SST_expts`: pre-calculated globally integrated sea surface temperatures used for Fig. 1.
 
 `Expt_config_figures.ipynb`: Notebook to create Fig. 1 in the paper.
 
