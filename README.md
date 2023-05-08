@@ -48,7 +48,7 @@ This eddy-permitting model is run for 200 years (more details present in Section
 | +7.5 W m⁻²            | `025deg_jra55_ryf_fluxH_pos5W` | 1 | +7.5 | G - T |
 | +15 W m⁻²            | `025deg_jra55_ryf_fluxH_pos10W` | 1 | +15 | G - T |
 | +30 W m⁻²            | `025deg_jra55_ryf_fluxH_pos20W` | 1 | +30 | G - T |
-| Uniform warming      | 025deg_jra55_ryf_fluxH_pos5W_globe  | 1 | 0, instead spatially uniform +5 | G |
+| Uniform warming      | `025deg_jra55_ryf_fluxH_pos5W_globe` | 1 | 0, instead spatially uniform +5 | G |
 
 Outputs for each experiment can be found on the National Computational Infrastructure in the following directory: `/g/data/hh5/tmp/db6174/mom/archive`. Access to these outputs requires one to be a member of this infrastructure. Therefore, a copy of these files will be made available in a Zenodo repository after acceptance of this manuscript.
 
