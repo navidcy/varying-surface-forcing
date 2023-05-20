@@ -32,11 +32,11 @@ We run ACCESS-OM2 (Kiss et al 2020) at 0.25 degree resolution which comprises of
 
 Please note that the MOM5 code used above has the following additions:
 
-(i) An implementation of resolved shear parameterisation for mixing layer depth, and 
+(i) A modified boundary layer scheme (K-profile parameterisation; Large et al 1994) for mixing layer depth, and 
 
 (ii) A script to input a mask and place it on top of wind forcing.
 
-This eddy-permitting model is run for 200 years (more details present in Section 2 of the paper), after which the following set of MOM5-only perturbation experiments are branched off using:
+This eddy-permitting model is run for 200 years (more details present in Section 2 of the paper), after which we initialise a MOM5-only control simulation for 100 years. This simulation also uses the modified KPP scheme similar to that in the ACCESS-OM2-025 control simulation. After 100 years, we branch off the following set of MOM5-only perturbation simulations (the MOM5-only control simulation is also run for another 100 years):
 
 | Expt short name    | Expt long name | Wind Factor | Surface buoyancy flux contrast (W m⁻²) | Region | 
 | ------------------ | ----------- | ----------- | -------------------------------------- | ------ |
@@ -50,7 +50,7 @@ This eddy-permitting model is run for 200 years (more details present in Section
 | +30 W m⁻²            | `025deg_jra55_ryf_fluxH_pos20W` | 1 | +30 | G - T |
 | Uniform warming      | `025deg_jra55_ryf_fluxH_pos5W_globe` | 1 | 0, instead spatially uniform +5 | G |
 
-Outputs for each experiment can be found on the National Computational Infrastructure in the following directory: `/g/data/hh5/tmp/db6174/mom/archive`. Access to these outputs requires one to be a member of this infrastructure. Therefore, a copy of these files will be made available in a Zenodo repository after acceptance of this manuscript.
+Each flux-forced perturbation experiment is run for 100 years. Outputs for each experiment can be found on the National Computational Infrastructure in the following directory: `/g/data/hh5/tmp/db6174/mom/archive`. Access to these outputs requires one to be a member of this infrastructure. Therefore, a copy of these files will be made available in a Zenodo repository after acceptance of this manuscript.
 
 The MOM5 version used for the perturbation experiments is: https://github.com/dhruvbhagtani/MOM5/tree/d7d72278a11ed9e2d88be3cb8d780b8efba629c5.
 
