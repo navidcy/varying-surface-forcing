@@ -2,9 +2,9 @@
 
 Jupyter notebooks to reproduce figures for the paper:
 
-&nbsp; &nbsp; &nbsp; &nbsp; Bhagtani, D., Hogg, A. McC., Holmes, R. M., and Constantinou, N. C. (2023) Surface heating steers planetary-scale ocean circulation., _J. Phys. Oceanogr._, (submitted on January 2023; arXiv:2301.11474, doi:[10.48550/arXiv.2301.11474](https://doi.org/10.48550/arXiv.2301.11474)).
+&nbsp; &nbsp; &nbsp; &nbsp; Bhagtani, D., A. M. Hogg, R. M. Holmes, and N. C. Constantinou, 2023: Surface heating steers planetary-scale ocean circulation. J. Phys. Oceanogr., doi: [https://doi.org/10.1175/JPO-D-23-0016.1](https://doi.org/10.1175/JPO-D-23-0016.1), in press.
 
-## Contents
+## 1. Contents of the repository
 
 `Figures`: Figures produced by jupyter notebooks in home directory.
 
@@ -22,7 +22,7 @@ Jupyter notebooks to reproduce figures for the paper:
 
 `Uniform_warming_figures.ipynb`: Notebook to create Fig. 13.
 
-## Numerical model information 
+## 2. Numerical model information 
 
 We run ACCESS-OM2 (Kiss et al 2020) at 0.25 degree resolution which comprises of:
 
@@ -36,7 +36,7 @@ Please note that the MOM5 code used above has the following additions:
 
 (ii) A script to input a mask and place it on top of wind forcing.
 
-This eddy-permitting model is run for 200 years (more details present in Section 2 of the paper), after which the following set of MOM5-only perturbation experiments are branched off using:
+This eddy-permitting model is run for 200 years (more details present in Section 2 of the paper), after which we begin a set of MOM5-only simulations forced by surface boundary fluxes. We first run a MOM5 control simulation for 100 years and branch off the following set of perturbation experiments:
 
 | Expt short name    | Expt long name | Wind Factor | Surface buoyancy flux contrast (W m⁻²) | Region | 
 | ------------------ | ----------- | ----------- | -------------------------------------- | ------ |
@@ -50,9 +50,25 @@ This eddy-permitting model is run for 200 years (more details present in Section
 | +30 W m⁻²            | `025deg_jra55_ryf_fluxH_pos20W` | 1 | +30 | G - T |
 | Uniform warming      | `025deg_jra55_ryf_fluxH_pos5W_globe` | 1 | 0, instead spatially uniform +5 | G |
 
-Outputs for each experiment can be found on the National Computational Infrastructure in the following directory: `/g/data/hh5/tmp/db6174/mom/archive`. Access to these outputs requires one to be a member of this infrastructure. Therefore, a copy of these files will be made available in a Zenodo repository after acceptance of this manuscript.
+Outputs for each MOM5-only experiment can be found on the National Computational Infrastructure in the following directory: `/g/data/hh5/tmp/db6174/mom/archive`. Access to these outputs requires one to be a member of this infrastructure.
 
-The MOM5 version used for the perturbation experiments is: https://github.com/dhruvbhagtani/MOM5/tree/d7d72278a11ed9e2d88be3cb8d780b8efba629c5.
+Finally, the MOM5 version used for the perturbation experiments is: https://github.com/dhruvbhagtani/MOM5/tree/d7d72278a11ed9e2d88be3cb8d780b8efba629c5.
+
+### 2.1. Generating surface boundary fluxes for MOM5-only simulations
+
+A climatology of the following data is constructed from the last 20 years of the 200 year ACCESS-OM2 simulation to create surface boundary fluxes:
+
+(i) Wind stress (x- and y-direction),
+
+(ii) River runoff and precipitation,
+
+(iii) Surface heat flux components: shortwave and longwave radiation, along with sensible and latent heat fluxes, and
+
+(iv) Time-varying surface salt restoration.
+
+NOTE: To prevent model instability, the surface heat flux components do not contain heat input due to frazil formation, and is dynamically calculated in all MOM5 simulations.
+
+For wind stress sensitivity experiments, we multiply the x- and y-directed wind stress globally by the required factor. For surface buoyancy flux contrast simulations, we apply an anomalous heat flux (shown in Fig. 1b in the paper) on top of the control simulation. The motivation behing the shape and amplitude of the heat flux function is outlined in section 2 of the paper.
 
 ## References
 
