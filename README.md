@@ -2,7 +2,7 @@
 
 Jupyter notebooks to reproduce figures for the paper:
 
-&nbsp; &nbsp; &nbsp; &nbsp; Bhagtani, D., A. M. Hogg, R. M. Holmes, and N. C. Constantinou, 2023: Surface heating steers planetary-scale ocean circulation. J. Phys. Oceanogr., doi: [https://doi.org/10.1175/JPO-D-23-0016.1](https://doi.org/10.1175/JPO-D-23-0016.1), in press.
+> Bhagtani, D., Hogg, A., McC., Holmes, R. M., and Constantinou, N. C. (2023) Surface heating steers planetary-scale ocean circulation. _J. Phys. Oceanogr._, **53(10)**, 2375–2391. doi:[10.1175/JPO-D-23-0016.1](https://doi.org/10.1175/JPO-D-23-0016.1)
 
 ## 1. Contents of the repository
 
